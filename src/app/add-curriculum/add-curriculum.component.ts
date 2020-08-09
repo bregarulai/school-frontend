@@ -8,8 +8,8 @@ import {FormGroup, FormControl} from '@angular/forms'
   styleUrls: ['./add-curriculum.component.css']
 })
 export class AddCurriculumComponent implements OnInit {
-  private name: string;
-  private myForm: FormGroup;
+   name: string;
+   myForm: FormGroup;
 
   constructor(private service: CurriculumService) { }
 
