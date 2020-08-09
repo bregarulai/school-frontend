@@ -20,6 +20,15 @@ export class CurriculumService {
 
   }
 
+  addCurriculum(name: string) {
+    console.log(name);
+    this.http.post<string>(this.baseUrl + '/addCurriculum', name)
+          .subscribe((val) =>{
+            console.log(val);
+          });
+              
+  }
+
   public getCurriculum(): Curriculum {
     return this.curriculum;
   }

@@ -1,1 +1,11 @@
-<p>add-curriculum works!</p>
+<h1>Add Curriculum</h1>
+
+<form class = "col-md-4" [formGroup]="myForm" (ngSubmit) = "addCurriculum(myForm.value)">
+    <div class="form-group ">
+      <label for="name">Curriculum Name</label>
+      <input type="text" class="form-control" id="name" name="name" 
+            formControlName = "name" aria-describedby="name">
+    </div>
+   
+    <button type="submit" class="btn btn-primary">Add</button>
+  </form>

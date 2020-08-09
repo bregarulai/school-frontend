@@ -9,6 +9,7 @@ import { RouterModule} from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { CurriculumComponent } from './curriculum/curriculum.component';
 import { AddCurriculumComponent } from './add-curriculum/add-curriculum.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { AddCurriculumComponent } from './add-curriculum/add-curriculum.componen
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [CurriculumService],
   bootstrap: [AppComponent]
