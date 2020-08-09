@@ -8,12 +8,14 @@ import { CurriculumListComponent } from './curriculum-list/curriculum-list.compo
 import { RouterModule} from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { CurriculumComponent } from './curriculum/curriculum.component';
+import { AddCurriculumComponent } from './add-curriculum/add-curriculum.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CurriculumListComponent,
-    CurriculumComponent
+    CurriculumComponent,
+    AddCurriculumComponent
   ],
   imports: [
     BrowserModule,
